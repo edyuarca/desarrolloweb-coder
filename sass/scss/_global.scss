@@ -170,6 +170,7 @@ button a {color: $font-color-button;}
 .fondo-miembros {
   background-color: $bg-color-divisor;
   margin-top: 3rem;
+  height: 800px;
 }
 
 .focus-ent:focus { 
@@ -343,4 +344,30 @@ footer {
 .icono-tw { 
   color: white; 
   margin: 5px 1rem;}
+}
+
+.modal-letras { 
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px); 
+
+    h4 { text-align: center;
+    margin-left: 3rem;}
+}
+
+.modal-boton {
+  @extend .boton;
+  border: 2px solid #d1b8ff;
+}
+
+.disco-template {
+  height: 630px;
+  width: 90%;
+  background-color: $bg-color-disco;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  border-radius: 15px;
 }
