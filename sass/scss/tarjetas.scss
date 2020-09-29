@@ -1,0 +1,48 @@
+@mixin tarjetas {
+    width: fit-content;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: $font-family-menu;
+    margin-top: 3rem;
+}
+
+.imai-responsive { 
+    @include tarjetas;
+    margin-left: 2rem;
+    grid-column: 2/span 3;
+}
+
+.atsushi-responsive { 
+    @include tarjetas;
+    margin-left: 5.3rem;
+    grid-column: 5/span 4;
+
+    div { margin-top: 1.2rem;}
+}
+
+.hoshino-responsive {
+    @include tarjetas;
+    grid-column: 9/span 3;
+    margin-left: 2rem;
+    
+    div {margin-top: 1.2rem;}
+}
+
+.higuchi-responsive {
+    @include tarjetas;
+    grid-column: 3/span 4;
+    margin-left: 6.5rem;
+    margin-bottom: 5rem;
+
+    div {margin-top: 1rem;}
+
+}
+
+.yagami-responsive { 
+    @include tarjetas;
+    grid-column: 7/span 3;
+    margin-left: 3.5rem;
+    margin-bottom: 5rem;
+
+    div {margin-top: 1rem;}
+}
