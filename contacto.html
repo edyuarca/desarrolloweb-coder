@@ -7,62 +7,77 @@
             
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
         <link rel="stylesheet" href="sass/css/main.css">
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>                  
     </head>
-<body> 
-    <header class="container-fluid">
-        
-        <nav class="navbar navbar-expand-lg ">
 
-            <a class="navbar navbar-brand" href="index.html"><img src="imagenes/logo.png" width="250" height="90" class="pb-2 ml-2" alt="Logo"></a>
-            
-            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav list-unstyled align-items-center pb-2 pl-3">
-                <li class="nav-item active" ><a href="index.html" class="nav-link text-decoration-none pl-5">Home</a></li>
-                <li class="nav-item active"><a href="quienesSon.html" class="nav-link text-decoration-none pl-4">Biografía</a></li>
-                <li class="nav-item active"><a href="discografia.html" class="nav-link text-decoration-none pl-4">Discografía</a> </li>
-                <li class="nav-item active"><a href="entrevistas.html" class="nav-link text-decoration-none pl-4">Entrevistas</a></li>
-                <li class="nav-item active"><a href="contacto.html" class="nav-link text-decoration-none pl-4">Contacto</a></li>
-            </ul>
-            </div>
-        </nav>
+    <body> 
     
+    <header class="container-fluid">
+
+            <div class="d-block d-sm-block d-xl-none fixed-top bg-menu-responsive pt-3">
+                <nav class="navbar navbar-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+                <div class="collapse" id="menu">
+                    <div class="p-4">
+                        <ul class=" menu-resposive navbar-nav list-unstyled pb-2">
+                            <li class="nav-item active" ><a href="index.html" class="nav-link text-decoration-none pl-5">Home</a></li>
+                            <li class="nav-item active"><a href="quienesSon.html" class="nav-link text-decoration-none pl-4">Biografía</a></li>
+                            <li class="nav-item active"><a href="discografia.html" class="nav-link text-decoration-none pl-4">Discografía</a> </li>
+                            <li class="nav-item active"><a href="entrevistas.html" class="nav-link text-decoration-none pl-4">Entrevistas</a></li>
+                            <li class="nav-item active"><a href="contacto.html" class="nav-link text-decoration-none pl-4">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="container-fluid d-none d-xl-block">
+                
+                <a href="index.html"><img src="imagenes/logo.png" width="250" height="90" class="ml-4 mt-2" alt="Logo"></a>
+     
+                <ul class="list-unstyled align-items-center mt-3 pt-4">
+                    <li><a href="index.html" class="text-decoration-none pl-5">Home</a></li>
+                    <li><a href="quienesSon.html" class="text-decoration-none pl-4">Biografía</a></li>
+                    <li><a href="discografia.html" class="text-decoration-none pl-4">Discografía</a> </li>
+                    <li><a href="entrevistas.html" class="text-decoration-none pl-4">Entrevistas</a></li>
+                    <li><a href="contacto.html" class="text-decoration-none pl-4">Contacto</a></li>
+                </ul>
+            
+            </nav>
     </header>
    
-    <section class="contacto-fondo">
+    <section class="container contacto-fondo">
         
         <h1 class="contacto-titulo">Contacto</h1>
         
-        <div class="contacto">
+        <div class="contacto d-inline-block">
             <p>Este es un espacio en constante desarrollo. El contenido aquí publicado es extraido de otros websites tanto oficales como blogs o foros. Si tienes alguna opinión o sugerencia? No dudes en contactarnos.</p>
             <p>Te esperamos!</p>
-        </div>
         
-        <form>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" cols="50" rows="15" id="comentarios" placeholder="Escribe aquí tus comentarios"></textarea>
-            <br>
-            <label for="suscribete">Suscribete para recibir novedades </label>
-            <input type="checkbox" id="suscribete" name="suscribete"> 
-            <br>
-            <label for="nombre">Nombre o Nickname</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre o Anonimo">
-            <br>
-            <label for="correo">E mail</label>
-            <input type="email" id="correo" name="correo" placeholder="email">
-            <br>
-            <input class="boton boton-font" type="submit" id="enviar" name="enviar">
-            <input class="boton boton-font" type="reset" id="borrar" value="Borrar datos">
-        </form>
-        <br>
+            <form>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" cols="50" rows="15" id="comentarios" placeholder="Escribe aquí tus comentarios"></textarea>
+                <br>
+                <label for="suscribete">Suscribete para recibir novedades </label>
+                <input type="checkbox" id="suscribete" name="suscribete"> 
+                <br>
+                <label for="nombre">Nombre o Nickname</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre o Anonimo">
+                <br>
+                <label for="correo">E mail</label>
+                <input type="email" id="correo" name="correo" placeholder="email">
+                <br>
+                <input class="boton boton-font" type="submit" id="enviar" name="enviar">
+                <input class="boton boton-font" type="reset" id="borrar" value="Borrar datos">
+            </form>
+        </div>
     </section>
     
     <footer class="container-fluid ">

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buck Tick</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
+    <link rel="stylesheet" href="sass/css/main.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+               
+</head>
+<body>
+    <header class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg ">
+
+            <a class="navbar navbar-brand" href="index.html"><img src="imagenes/logo.png" width="250" height="90" class="pb-2 ml-2" alt="Logo"></a>
+            
+            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav list-unstyled align-items-center pb-2 pl-3">
+                <li class="nav-item active" ><a href="index.html" class="nav-link text-decoration-none pl-5">Home</a></li>
+                <li class="nav-item active"><a href="quienesSon.html" class="nav-link text-decoration-none pl-4">Biografía</a></li>
+                <li class="nav-item active"><a href="discografia.html" class="nav-link text-decoration-none pl-4">Discografía</a> </li>
+                <li class="nav-item active"><a href="entrevistas.html" class="nav-link text-decoration-none pl-4">Entrevistas</a></li>
+                <li class="nav-item active"><a href="contacto.html" class="nav-link text-decoration-none pl-4">Contacto</a></li>
+            </ul>
+            </div>
+        </nav>
+    
+    </header>
+
+    <section>
+        
+        <h1 class="titulos">Entrevistas</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="entrevistaMayo.html"><img class="d-block w-100 mb-5" src="imagenes/entrevista05-08.jpg"  width="400" height="500" alt="imagen para ingresar a la entrevista"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="pb-5">Entrevista a Sakurai Atsushi 05.20</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mb-5" src="imagenes/imaiEntrevista.png" width="400" height="500" alt="imagen para ingresar a la entrevista">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="pb-5">Entrevista a Imai Hisashi 05.20</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 mb-5" src="imagenes/entrevistaAtsushi-18.jpg" width="400" height="500" alt="imagen para ingresar a la entrevista">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="pb-5">Entrevista a Sakurai Atsushi<br>Revista Kadokawa special Buck-Tick edition 09.18</h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    
+    </section>
+
+    <footer class="container-fluid ">
+        <div class="row">
+            
+            <div class= "col"></div>
+                <p class="d-flex justify-content-start d-flex align-items-center pt-3">Pagina sin fines de Lucro / 2020</p>
+            </div>
+
+            <div class="col">
+                <div class="d-flex justify-content-end d-flex align-items-center">
+                <a href="https://www.facebook.com/bucktick.official/"> <i class="icono-fb fab fa-facebook-square"></i> </a>
+                <a href="https://twitter.com/BUCKTICK_INFO"><i class="icono-tw fab fa-twitter"></i></a>
+                <a href="https://buck-tick.com/"><p class="pt-4 pr-2">Sitio Oficial</p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        margin:0,
+        nav: true,
+        autoplay: true,
+        loop:true,
+        autoWidth:true,
+        items:5,
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/da11430b4a.js" crossorigin="anonymous"></script>
+</body>
+</html>

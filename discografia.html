@@ -7,6 +7,7 @@
     
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
@@ -15,9 +16,10 @@
                
 </head>
 <body>
+
     <header class="container-fluid">
 
-        <div class="d-block d-sm-block d-xl-none">
+        <div class="d-block d-sm-block d-xl-none fixed-top bg-menu-responsive pt-3">
             <nav class="navbar navbar-dark">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,21 +53,44 @@
         </nav>
     </header>
 
-    <section>
-        <h1 class="titulos">Albumes y traducciones</h1>
-        <div class="disco-template d-block d-sm-block d-xl-none">
-            <img src="imagenes/atomMiraiha.jpg" width="300" height="300" class="d-flex justify-content-center" alt="imagen de atom miraiha">
-            <button type="button"class="modal-boton btn btn-success openBtn">Letras</button>
-            <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-letras">
+    <section class="d-block d-sm-block d-xl-none">
+
+        <h1 class="titulos ml-5">Albumes</h1>
+        
+        <div class= "container d-flex justify-content-center text-justify mb-4">
+            <p>Aquí podrás ver la Discografía de la banda y las repesctivas traducciones de sus letras, ademas del link de acceso al streaming en las diferentes plataformas.
+            Si hay algun disco con algun faltante de Traducción sin ningun aviso, no dudes en escribirnos en la sección de contacto.</p> 
+        </div>
+
+        <div class="disco-template">
+            <img src="imagenes/atomMiraiha.jpg" width="300" height="300" class="cover-responsive" alt="imagen de atom miraiha">
+            
+            <div>
+                <div class="album-titulo">
+                <p class="pt-4"><b>No 9</b></p>
+                </div>
+
+                <div class="anio-titulo">
+                <p><b>2016</b></p>
+                </div>  
+
+                <div class="streaming">
+                    <a href="https://youtu.be/BPr5LYM-VUo" target="_blank"><img src="imagenes/youtube.png" width="28" height="28"  alt="enlace youtube"></a>
+                </div>
+
+                <button type="button"class="modal-boton btn btn-success openBtn">Letras</button>
+                <div class="modal fade" id="myModal" role="dialog">
+
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                        <div class="modal-letras">
                         <button type="button" class="close" data-dismiss="modal">×</button>
                         <h4>Letras Traducidas</h4>
                     </div>
+                    
                     <div class="modal-body">
-                        <p>Cum uh sol nu, flask of another type </p>
+                        <p>Cum uh sol nu, flask of another </p>
                         <p>PINOA ICCHIO </p>
                         <p>Devil's Wings </p>
                         <p>El Dorado </p>
@@ -79,20 +104,103 @@
                         <p>Ai no Souretsu</p>
                         <p>NEW WORLD, beginning</p>
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
+
                 </div>
             </div>
+        </div>    
+    </section>
+
+    <section class="d-block d-sm-block d-xl-none">
+        <div class="disco-template">
+            <img src="imagenes/razzleDazzle.jpg" width="300" height="300" class="cover-responsive" alt="imagen de atom miraiha">
+            
+            <div>
+                <div class="album-titulo">
+                    <p class="pt-4"><b>Razzle Dazzle</b></p>
+                </div>
+
+                <div class="anio-titulo">
+                    <p><b>2010</b></p>
+                </div>  
+
+                <div class="streaming">
+                    <a href="https://www.deezer.com/es/album/151884442" target="_blank"><img src="imagenes/deezer.png" width="28" height="28"  alt="enlace youtube"></a>
+                </div>
+
+                <button type="button" class="modal-boton btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Letras</button>
+                
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Letras Traducidas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <p>Razzle Dazzle</p>
+                                <p>Kyōki no Dead Heat</p>
+                                <p>Dokudanjō Beauty -R.I.P.</p>
+                                <p>Hamushi no Yō ni</p>
+                                <p>Yōgetsu -Yōgetsu no Utage</p>
+                                <p>Bolero </p>
+                                <p>Django!!! -Genwaku no Django</p>
+                                <p>Sakuran Baby</p>
+                                <p>Pixy</p>
+                                <p>Kuchizuke</p>
+                                <p>Tango Swanka</p>
+                                <p>Solaris</p>
+                            </div>    
+                        
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>    
+                    </div>    
+                </div>
+            </div>    
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="disco-template d-block d-sm-block d-xl-none">
+            <img src="imagenes/mementoMori.jpg" width="300" height="300" class="cover-responsive" alt="imagen de atom miraiha">
+            
+            <div>
+                <div class="album-titulo">
+                <p class="pt-4"><b>Memento Mori</b></p>
+                </div>
+
+                <div class="anio-titulo">
+                <p><b>2014</b></p>
+                </div>  
+
+                <div class="streaming">
+                    <a href="https://www.deezer.com/es/album/151889282" target="_blank"><img src="imagenes/deezer.png" width="28" height="28"  alt="enlace youtube"></a>
+                </div>
+
+                <p class="mt-4 d-flex justify-content-center"><i>Traducción en proceso</i></p>
+            </div>
+        </div>    
     </section>
 
 
     <section class="d-none d-lg-block">
         
-        <h1 class="titulos">Albumes y traducciones</h1>
+        <h1 class="titulos ml-5 pl-5 mb-5">Albumes</h1>
+        
+        <div class= "container d-flex justify-content-center text-justify mb-4">
+            <p>Aquí podrás ver la Discografía de la banda y las repesctivas traducciones de sus letras, ademas del link de acceso al streaming en las diferentes plataformas.
+            Si hay algun disco con algun faltante de Traducción sin ningun aviso, no dudes en escribirnos en la sección de contacto.</p> 
+        </div>
 
+        
         <div class="disco1">
 
             <img src="imagenes/atomMiraiha.jpg" width="400" height="400" class="cover1 pt-2" alt="imagen de atom miraiha">

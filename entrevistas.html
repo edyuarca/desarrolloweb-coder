@@ -7,6 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
@@ -15,9 +16,10 @@
                
 </head>
 <body>
+
   <header class="container-fluid">
 
-    <div class="d-block d-sm-block d-xl-none">
+    <div class="d-block d-sm-block d-xl-none fixed-top bg-menu-responsive pt-3">
         <nav class="navbar navbar-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,44 +53,44 @@
     </nav>
   </header>
 
-    <section>
+    <section class="container">
         
         <h1 class="titulos">Entrevistas</h1>
 
-        <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="entrevistaMayo.html"><img class="d-block w-100 mb-5" src="imagenes/entrevista05-08.jpg"  width="400" height="500" alt="imagen para ingresar a la entrevista"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="pb-5">Entrevista a Sakurai Atsushi 05.20</h3>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 mb-5" src="imagenes/imaiEntrevista.png" width="400" height="500" alt="imagen para ingresar a la entrevista">
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="pb-5">Entrevista a Imai Hisashi 05.20</h3>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100 mb-5" src="imagenes/entrevistaAtsushi-18.jpg" width="400" height="500" alt="imagen para ingresar a la entrevista">
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="pb-5">Entrevista a Sakurai Atsushi<br>Revista Kadokawa special Buck-Tick edition 09.18</h3>
-              </div>
+      <p>En esta sección podrás acceder a algunas de las entrevistas mas importantes de la banda en idioma español.</p>
+      <p><i>Recuerda que esto es un trabajo colaborativo y que las fuentes se mencionaran al final de cada uno de los articulos.</i></p>
+       
+      <div class="d-inline-block bg-primary mt-5 mb-5 mr-5">
+        <div class="card bg-card" style="width: 18rem;">
+          <img src="imagenes/entrevista05-08.jpg" class="entrevistas card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Entrevista Mayo 2020</h5>
+            <p class="card-text">Entrevista a Sakuarai Atsushi acerca de su vida en la época de cuarentena y proyectos durante este periodo.</p>
+            <a href="entrevistaMayo.html" class="ent-boton btn btn-primary">Leer aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-inline-block bg-primary mt-5 mb-5 mr-5">  
+      <div class="card bg-card" style="width: 18rem;">
+          <img src="imagenes/imaiEntrevista.png" class="entrevistas card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Entrevista Mayo 2020</h5>
+            <p class="card-text">Entrevista a Imai - Hisashi acerca de su vida en la época de cuarentena y proyectos durante este periodo.</p>
+            <a href="#" class="ent-boton btn btn-primary">Leer aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-inline-block bg-primary mt-5 mb-5">  
+        <div class="card bg-card" style="width: 18rem;">
+            <img src="imagenes/entrevistaAtsushi-18.jpg" class=" entrevistas card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Entrevista Septiembre</h5>
+              <p class="card-text">Entrevista completa en Español a Sakurai Atsushi en la Revista Kadokawa special, Buck-Tick edition Septiembre 2019</p>
+              <a href="#" class="ent-boton btn btn-primary">Leer aquí</a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
     
     </section>

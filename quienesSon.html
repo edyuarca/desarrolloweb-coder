@@ -9,6 +9,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
@@ -18,47 +19,46 @@
 </head>
 <body>
     
-    
-    <header class="container-fluid">
+  <header class="container-fluid">
 
-        <div class="d-block d-sm-block d-xl-none">
-            <nav class="navbar navbar-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </nav>
-            <div class="collapse" id="menu">
-                <div class="p-4">
-                    <ul class=" menu-resposive navbar-nav list-unstyled pb-2">
-                        <li class="nav-item active" ><a href="index.html" class="nav-link text-decoration-none pl-5">Home</a></li>
-                        <li class="nav-item active"><a href="quienesSon.html" class="nav-link text-decoration-none pl-4">Biografía</a></li>
-                        <li class="nav-item active"><a href="discografia.html" class="nav-link text-decoration-none pl-4">Discografía</a> </li>
-                        <li class="nav-item active"><a href="entrevistas.html" class="nav-link text-decoration-none pl-4">Entrevistas</a></li>
-                        <li class="nav-item active"><a href="contacto.html" class="nav-link text-decoration-none pl-4">Contacto</a></li>
-                    </ul>
-                </div>
+    <div class="d-block d-sm-block d-xl-none fixed-top bg-menu-responsive pt-3">
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="collapse" id="menu">
+            <div class="p-4">
+                <ul class=" menu-resposive navbar-nav list-unstyled pb-2">
+                    <li class="nav-item active" ><a href="index.html" class="nav-link text-decoration-none pl-5">Home</a></li>
+                    <li class="nav-item active"><a href="quienesSon.html" class="nav-link text-decoration-none pl-4">Biografía</a></li>
+                    <li class="nav-item active"><a href="discografia.html" class="nav-link text-decoration-none pl-4">Discografía</a> </li>
+                    <li class="nav-item active"><a href="entrevistas.html" class="nav-link text-decoration-none pl-4">Entrevistas</a></li>
+                    <li class="nav-item active"><a href="contacto.html" class="nav-link text-decoration-none pl-4">Contacto</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    
+    <nav class="container-fluid d-none d-xl-block">
         
-        <nav class="container-fluid d-none d-xl-block">
-            
-            <a href="index.html"><img src="imagenes/logo.png" width="250" height="90" class="ml-4 mt-2" alt="Logo"></a>
- 
-            <ul class="list-unstyled align-items-center mt-3 pt-4">
-                <li><a href="index.html" class="text-decoration-none pl-5">Home</a></li>
-                <li><a href="quienesSon.html" class="text-decoration-none pl-4">Biografía</a></li>
-                <li><a href="discografia.html" class="text-decoration-none pl-4">Discografía</a> </li>
-                <li><a href="entrevistas.html" class="text-decoration-none pl-4">Entrevistas</a></li>
-                <li><a href="contacto.html" class="text-decoration-none pl-4">Contacto</a></li>
-            </ul>
-        
-        </nav>
-    </header>
+        <a href="index.html"><img src="imagenes/logo.png" width="250" height="90" class="ml-4 mt-2" alt="Logo"></a>
+
+        <ul class="list-unstyled align-items-center mt-3 pt-4">
+            <li><a href="index.html" class="text-decoration-none pl-5">Home</a></li>
+            <li><a href="quienesSon.html" class="text-decoration-none pl-4">Biografía</a></li>
+            <li><a href="discografia.html" class="text-decoration-none pl-4">Discografía</a> </li>
+            <li><a href="entrevistas.html" class="text-decoration-none pl-4">Entrevistas</a></li>
+            <li><a href="contacto.html" class="text-decoration-none pl-4">Contacto</a></li>
+        </ul>
+    
+    </nav>
+  </header>
 
     <article class="container "> 
         <div class="row">   
             <div class="col-md-12 col-xl-12">
-                <h1 class="titulos titulos-seccion">¿Quienes son? </h1>
+                <h1 class="titulos">¿Quienes son? </h1>
             
                 <div class="article1">
                     <p>BUCK-TICK es una banda de Rock Japones fundada en 1983/85 y uno de los precursores del estilo <strong> Visual Kei*</strong>, sus integrantes se conocen desde la secundaria y siempre se han mantenido juntos desde la fundación de la banda.</p>
@@ -202,59 +202,100 @@
 
     </article>    
 
-    <article id="influencias" class="grid">
+    <article id="influencias" class="d-none d-xl-block">
         
+        <div class="grid">
             <h2 class="subtitulos">Influencias Conocidas </h2>
 
-                <div class="container influencias1 d-none d-lg-block"> 
+                <div class="container influencias1 d-none d-xl-block"> 
                     <p class="overlay1"><b class="d-flex justify-content-center mt-5 pt-5">BAUHAUS</b></p>
                     <img src="imagenes/bauhaus.jpg" width="280" height="220"  alt="imagen bauhaus">   
                 </div>
 
-                <div class="container influencias2 d-none d-lg-block">
+                <div class="container influencias2 d-none d-xl-block">
                     <p class="overlay2"><b class="d-flex justify-content-center mt-5 pt-5 pl-3">ROBERT SMITH (The Cure)</b></p> 
                     <img src="imagenes/robertSmith.jpg" width="280" height="220"  alt="imagen robert smith">
                 </div>
 
-                <div class="container influencias3 d-none d-lg-block">
+                <div class="container influencias3 d-none d-xl-block">
                     <p class="overlay"><b class="d-flex justify-content-center mt-5 pt-5 PL-3">SEX PISTOLS</b></p>
                     <img src="imagenes/sexpistols.jpg" width="280" height="220"  alt="imagen sex pistols">
                 </div>
             
-                <div class="container influencias1 d-none d-lg-block">
+                <div class="container influencias1 d-none d-xl-block">
                     <p class="overlay1"><b class="d-flex justify-content-center mt-5 pt-5">KRAFTWERK</b></p>
                     <img src="imagenes/kraftwerk.jpg" width="280" height="220"  alt="imagen kraftwerk">
                 </div>
             
 
-                <div class="container influencias2 d-none d-lg-block">
+                <div class="container influencias2 d-none d-xl-block">
                     <p class="overlay2"><b class="d-flex justify-content-center mt-5 pt-5 pl-3">DAVID BOWIE</b></p>
                     <img src="imagenes/bowie.jpg" width="280" height="220"  alt="imagen david bowie">
                 </div>
 
-                <div class="container influencias3 d-none d-lg-block">
+                <div class="container influencias3 d-none d-xl-block">
                     <p class="overlay"><b class="d-flex justify-content-center mt-5 pt-5 pl-2">THE SISTERS OF MERCY</b></p>
                     <img src="imagenes/sisters.jpg" width="280" height="220"  alt="imagen sisters of mercy">
                 </div>
             
-                <div class="container influencias1 d-none d-lg-block">
+                <div class="container influencias1 d-none d-xl-block">
                     <p class="overlay1"><b class="d-flex justify-content-center mt-5 pt-5 pl-2">THE BEATLES</b></p>
                     <img src="imagenes/beatles.jpg" width="280" height="220"  alt="imagen the beatles">
                 </div>
 
-                <div class="container influencias2 d-none d-lg-block">
+                <div class="container influencias2 d-none d-xl-block">
                     <p class="overlay2"><b class="d-flex justify-content-center mt-5 pt-5 pl-2">LED ZEPPELIN</b></p>
                     <img src="imagenes/led.jpg" width="280" height="220"  alt="imagen led zeppelin">
                 </div>
 
-                <div class="container influencias3 d-none d-lg-block">
+                <div class="container influencias3 d-none d-xl-block">
                     <p class="overlay"><b class="d-flex justify-content-center mt-5 pt-5 pl-2">THE CLASH</b></p>
                     <img src= "imagenes/clash.jpg" width="280" height="220"  alt="imagen the clash">
                 </div>   
-            
-        
+        </div>    
     </article>
-        
+
+    <article>
+        <div class="container d-block d-sm-block d-xl-none">
+            
+            <h2 class="mb-5">Influencias Conocidas</h2>
+                
+            <div class="card-group mb-2">
+                
+                <div class="card mr-1">
+                  <img class="card-img-top" src="imagenes/bauhaus.jpg" width="280" height="220"  alt="imagen bauhaus">
+                  <div class="card-body">
+                    <h5 class="card-title">BAUHAUS</h5>
+                  </div>
+                </div>
+
+                <div class="card ml-1">
+                  <img class="card-img-top" src="imagenes/robertSmith.jpg" width="280" height="220"  alt="imagen robert smith">
+                  <div class="card-body">
+                    <h5 class="card-title">ROBERT SMITH</h5>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-group mb-5">
+                
+                <div class="card mr-1">
+                  <img class="card-img-top" src="imagenes/sexpistols.jpg" width="280" height="220"  alt="imagen sex pistols">
+                  <div class="card-body">
+                    <h5 class="card-title">SEX PISTOLS</h5>
+                  </div>
+                </div>
+
+                <div class="card ml-1">
+                  <img class="card-img-top" src="imagenes/kraftwerk.jpg" width="280" height="220"  alt="imagen kraftwerk">
+                  <div class="card-body">
+                    <h5 class="card-title">KRAFTWERK</h5>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
     <footer class="container-fluid ">
         <div class="row">
             
